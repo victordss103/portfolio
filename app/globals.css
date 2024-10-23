@@ -2,26 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 285 5% 17%;
+    --foreground: 60 25% 98%;
+    --muted: 285 12% 21%;
+    --muted-foreground: 285 12% 71%;
+    --popover: 285 5% 14%;
+    --popover-foreground: 0 0% 100%;
+    --card: 285 5% 15%;
+    --card-foreground: 0 0% 100%;
+    --border: 0 0% 22%;
+    --input: 0 0% 25%;
+    --primary: 45 100% 70%;
+    --primary-foreground: 45 100% 10%;
+    --secondary: 45 30% 25%;
+    --secondary-foreground: 45 30% 85%;
+    --accent: 285 5% 32%;
+    --accent-foreground: 285 5% 92%;
+    --destructive: 10 97% 48%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 45 100% 70%;
+    --radius: 0.5rem;
+  }
+
+  .light {
+    --background: 60 25% 98%; /* Remplace 285 5% 17% */
+    --foreground: 285 5% 17%; /* Remplace 60 25% 98% */
+    --muted: 45 5% 90%; /* Remplace 285 12% 21% */
+    --muted-foreground: 285 12% 29%; /* Remplace 285 12% 71% */
+    --popover: 60 20% 95%; /* Remplace 285 5% 14% */
+    --popover-foreground: 0 0% 0%; /* Remplace 0 0% 100% */
+    --card: 60 20% 95%; /* Remplace 285 5% 15% */
+    --card-foreground: 0 0% 0%; /* Remplace 0 0% 100% */
+    --border: 0 0% 78%; /* Remplace 0 0% 22% */
+    --input: 0 0% 75%; /* Remplace 0 0% 25% */
+    --primary: 210 100% 40%; /* Remplace 45 100% 70% */
+    --primary-foreground: 0 0% 100%; /* Remplace 45 100% 10% */
+    --secondary: 210 50% 20%; /* Remplace 45 30% 25% */
+    --secondary-foreground: 0 0% 100%; /* Remplace 45 30% 85% */
+    --accent: 210 100% 50%; /* Remplace 285 5% 32% */
+    --accent-foreground: 0 0% 100%; /* Remplace 285 5% 92% */
+    --destructive: 0 80% 50%; /* Remplace 10 97% 48% */
+    --destructive-foreground: 0 0% 100%; /* Remplace 0 0% 100% */
+    --ring: 210 100% 40%; /* Remplace 45 100% 70% */
+    --radius: 0.5rem; /* Pas de changement */
+}
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
