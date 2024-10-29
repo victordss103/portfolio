@@ -1,8 +1,6 @@
 "use client"
 import * as React from "react";
-import { useTheme } from "next-themes";
 import { Section } from "./Section";
-import { isSystemDark } from './method/isDark';
 
 export function Project(){
 

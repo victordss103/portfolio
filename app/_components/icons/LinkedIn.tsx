@@ -1,14 +1,11 @@
 "use client"
 
-import { useTheme } from "next-themes";
 import { ComponentPropsWithoutRef } from "react";
 
 export const LinkedIn = (
   props: ComponentPropsWithoutRef<"svg"> & { size?: number }
 ) => {
   
-  const { theme } = useTheme();
-  const isSystemDark = theme === "system" && window.matchMedia('(prefers-color-scheme: dark)').matches || theme === "dark";
   return (
     <svg
       width={props.size}
