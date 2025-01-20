@@ -1,41 +1,28 @@
-import { buttonVariants } from "@/components/ui/button";
-import { GitHubIcon } from "./icons/GitHubIcon";
+"use client"
 import { Section } from "./Section";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
-import { LinkedIn } from "./icons/LinkedIn";
-import { ModeToggle } from "./ModeToggle";
+import ModeSwitcher from "./ModeSwitcher";
+import { useEffect } from "react";
+import { useTheme } from "next-themes";
 
 export const Header = () => {
+  const { theme } = useTheme();
+
+  // Ajouter la classe "dark" au <html> uniquement côté client
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
   return (
-    <header className="sticky top-0 py-4  text-center">
-      <Section className="flex items-baseline">
-        <h1 className="text-4xl font-bold text-primary">Victor.com</h1>
-
-        <div className="flex-1">
-          <ul className="flex text-right mr-5 gap-3">
-            <Link
-              href="https://google.com"
-              className={cn(
-                buttonVariants({ variant: "outline" }),
-                "size-6 p-0"
-              )}
-            >
-              <GitHubIcon size={16} className="text-foreground"></GitHubIcon>
-            </Link>
-
-            <Link
-              href="https://linkedin.com/in/victor-de-sousa-dev"
-              className={cn(
-                buttonVariants({ variant: "outline" }),
-                "size-6 p-0"
-              )}
-            >
-              <LinkedIn size={16} className="text-foreground" />
-            </Link>
-          </ul>
+    <header className="top-0 py-4">
+      <Section className="flex max-md:flex-col items-start">
+        <h1 className="flex-[100] text-4xl font-bold text-primary">Victor.com</h1>
+        <div className="flex-[1]">
+          <ModeSwitcher />
         </div>
-        <ModeToggle />
       </Section>
     </header>
   );

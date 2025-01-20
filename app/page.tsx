@@ -2,7 +2,7 @@
 import { Header } from "./_components/Header";
 import { Hero } from "./_components/Hero";
 import { Spacing } from "./_components/Spacing";
-import { Project } from "./_components/Project";
+import { Projects } from "./_components/Projects";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <Spacing size="md"/>
       <Hero/>
       <Spacing size="sm"/>
-      <Project/>
+      <Projects/>
     </main>
   );
 }
