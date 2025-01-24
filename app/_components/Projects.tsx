@@ -5,6 +5,7 @@ import MadScientist from './projects/MadScientist';
 import MyTube from "./projects/MyTube";
 import MyWarband from "./projects/MyWarband";
 import Apod from "./projects/Apod";
+import { Spacing } from "./Spacing";
 
 export function Projects() {
   
@@ -14,9 +15,13 @@ export function Projects() {
         Mes projets
       </h2>
       <MyTube/>
+      <Spacing size="sm"/>
       <MyWarband/>
+      <Spacing size="sm"/>
       <Apod/>
+      <Spacing size="sm"/>
       <MadScientist/>
+      <Spacing size="sm"/>
     </Section>
   );
 }
