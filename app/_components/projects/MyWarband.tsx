@@ -4,8 +4,8 @@ import { WoW_char_name } from '../icons/WoW Characters/WoW_char_name';
 import { Tag } from '../miscellaneous/Tag';
 export default function MyWarband() {
   return (
-    <div className="text-center w-full grid grid-cols-3 gap-5 mt-3">
-      <div className="col-span-2">
+    <div className="text-center w-full grid md:grid-cols-3 gap-5 mt-3">
+      <div className="md:col-span-2">
         <div className="grid grid-cols-2">
           <WoW_char_level/>
           <WoW_char_name/>

@@ -6,8 +6,8 @@ import { Tag } from "../miscellaneous/Tag";
 
 export default function MadScientist() {
   return (
-    <div className="text-center w-full grid grid-cols-3 gap-5 mt-3">
-      <div className="col-span-2">
+    <div className="text-center w-full grid md:grid-cols-3 gap-5 mt-3">
+      <div className="md:col-span-2">
         <div className="grid grid-cols-2">
           <Title_screen_MadScientist />
           <Gameplay1_MadScientist />
@@ -19,7 +19,7 @@ export default function MadScientist() {
         </h1>
         <span>Un petit jeu en 2D constitué d'un seul niveau dans le but de comprendre le moteur/logiciel d'Epic Games (UE5) en utilisant les outils Blueprint.</span>
         <br />
-        <div className="mt-5 grid grid-cols-1">
+        <div className="mt-5 grid md:grid-cols-1">
         <Tag text="Unreal Engin 5"/>
         </div>
       </div>

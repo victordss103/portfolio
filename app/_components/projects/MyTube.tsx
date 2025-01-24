@@ -4,8 +4,8 @@ import { Tag } from '../miscellaneous/Tag';
 import { MyTube_screen } from './../icons/MyTube/MyTube_screen';
 export default function MyTube() {
   return (
-    <div className="text-center w-full grid grid-cols-3 gap-5 mt-3">
-      <div className="col-span-2">
+    <div className="text-center w-full grid md:grid-cols-3 gap-5 mt-3">
+      <div className="md:col-span-2">
         <div className="grid grid-cols-2">
           <MyTube_screen/>
           <Football_search/>

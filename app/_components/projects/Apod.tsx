@@ -4,13 +4,13 @@ import { APOD_screen } from './../icons/APOD/apod_screen';
 
 export default function Apod() {
   return (
-    <div className="text-center w-full grid grid-cols-3 gap-5 mt-3">
-      <div className="col-span-2">
-        <div className="grid grid-cols-1">
+    <div className="text-center w-full md:grid md:grid-cols-3 md:gap-5 mt-3">
+      <div className="md:col-span-2">
+        <div className="grid md:grid-cols-1">
           <APOD_screen />
         </div>
       </div>
-      <div className="col-span-1">
+      <div className="md:col-span-1">
         <h1 className="text-caption text-primary text-2xl mb-5">
           APOD NASA
         </h1>
