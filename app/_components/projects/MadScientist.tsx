@@ -20,7 +20,7 @@ export default function MadScientist() {
         <span>Un petit jeu en 2D constitué d'un seul niveau dans le but de comprendre le moteur/logiciel d'Epic Games (UE5) en utilisant les outils Blueprint.</span>
         <br />
         <div className="mt-5 grid md:grid-cols-1">
-        <Tag text="Unreal Engin 5"/>
+        <Tag text="Unreal Engine 5"/>
         </div>
       </div>
     </div>

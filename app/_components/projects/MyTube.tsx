@@ -15,7 +15,7 @@ export default function MyTube() {
         <h1 className="text-caption text-primary text-2xl mb-5">
           MyTube
         </h1>
-        <span>Un clone de YouTube en ReactJS et NodeJS dans le but de m'entraîner dans ces dites technologies.</span>
+        <span>Un clone de YouTube en ReactJS et NodeJS dans le but de me mettre au défi.</span>
         <div className="mt-5 grid grid-cols-3 gap-3">
         <Tag text="ReactJS"/>
         <Tag text="NodeJS"/>

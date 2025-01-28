@@ -25,13 +25,26 @@ export const Hero = () => {
               les attributs principaux de mes deux passions.
             </p>
             <br />
+            <p>
+              Je m'intéresse sérieusement au développement depuis mon
+              adolescence et j'y ai vraiment mis les pieds en 2019, en
+              commençant une nouvelle école, l'ESIG (Ecole Supérieure
+              d'Informatique de Gestion) dans laquelle j'ai pu obtenir une
+              solide base de développement notamment en Java, PHP ainsi qu'en
+              Python.
+
+              J'ai également été sur le terrain de la base de données
+              relationnelle en faisant du SQL Oracle.
+              <br />
+              Depuis, je me challenge en découvrant de nouvelles technologies,
+              la dernière en date étant ReactJS ainsi que NextJS.
+            </p>
             <br />
             <p>
               La créativité et l'imagination procurée par l'immensité de
               l'espace est sans doute une bonne comparaison de la multitude de
               possiblité en terme développement.
             </p>
-            <br />
             <br />
             <p>
               Quant aux jeux vidéos, ce sont tout simplement des millions de
