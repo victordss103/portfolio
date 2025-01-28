@@ -7,12 +7,6 @@ import { ThemeProvider } from "@/components/ui/ThemeProvider";
 
 const anek = Anek_Telugu({ subsets: ["latin"], variable: "--font-caption" });
 
-//const geistSans = localFont({
-//  src: "./fonts/GeistVF.woff",
-//  variable: "--font-geist-sans",
-//  weight: "100 900",
-//});
-//
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
